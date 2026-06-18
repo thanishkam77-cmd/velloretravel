@@ -2,10 +2,6 @@ $headerTpl = Get-Content ".\includes\header.php" -Raw
 $leftTpl = Get-Content ".\includes\left_sidebar.php" -Raw
 $footerTpl = Get-Content ".\includes\footer.php" -Raw
 
-# Clean up PHP code in templates
-$headerTpl = $headerTpl -replace "(?s)<\?php.*?\?>\s*", ""
-$headerTpl = $headerTpl -replace '<\?php echo \(\$active_nav == ''.*?''\) \? ''active'' : ''''; \?>', ''
-
 $files = Get-ChildItem -Path ".\*.php" -Exclude "mail*.php", "config.php"
 
 foreach ($file in $files) {
@@ -38,9 +34,39 @@ foreach ($file in $files) {
     }
 
     # 4. Construct Header
-    $pageHeader = $headerTpl -replace '<\?php echo \$page_title; \?>', $title
-    $pageHeader = $pageHeader -replace '<\?php echo \$body_id; \?>', $bodyId
+    $pageHeader = $headerTpl
     
+    # Calculate active nav class based on output filename
+    $outputName = $file.Name -replace '\.php$', '.html'
+    
+    $navHome = if ($outputName -eq "index.html") { "active" } else { "" }
+    $navTourist = if ($bodyId -eq "tourist" -or $outputName -eq "tourist-places.html" -or @("vellore-fort.html", "golden-temple.html", "govt-museum.html", "observatory.html", "yelagiri.html", "amrithi-forest.html", "jalagamparai-falls.html") -contains $outputName) { "active" } else { "" }
+    $navHotels = if ($outputName -eq "vellore-hotels.html") { "active" } else { "" }
+    $navFood = if ($outputName -eq "vellore-food.html") { "active" } else { "" }
+    $navAtm = if ($outputName -eq "vellore-atm.html") { "active" } else { "" }
+    $navBanks = if ($outputName -eq "vellore-banks.html") { "active" } else { "" }
+    $navTaxi = if ($outputName -eq "vellore-taxiservice.html") { "active" } else { "" }
+    $navOperators = if ($outputName -eq "tour-operator.html") { "active" } else { "" }
+    $navContact = if ($outputName -eq "contactus.html") { "active" } else { "" }
+
+    # Replace title and body_id in PHP tags
+    $pageHeader = $pageHeader -replace '<\?php echo \$page_title; \?>', $title
+    $pageHeader = $pageHeader -replace '<\?php echo \$body_id; \?>', $bodyId
+
+    # Replace active states
+    $pageHeader = $pageHeader -replace '<\?php echo \(\$active_nav == ''home''\) \? ''active'' : ''''; \?>', $navHome
+    $pageHeader = $pageHeader -replace '<\?php echo \(\$active_nav == ''tourist''\) \? ''active'' : ''''; \?>', $navTourist
+    $pageHeader = $pageHeader -replace '<\?php echo \(\$active_nav == ''hotels''\) \? ''active'' : ''''; \?>', $navHotels
+    $pageHeader = $pageHeader -replace '<\?php echo \(\$active_nav == ''food''\) \? ''active'' : ''''; \?>', $navFood
+    $pageHeader = $pageHeader -replace '<\?php echo \(\$active_nav == ''atm''\) \? ''active'' : ''''; \?>', $navAtm
+    $pageHeader = $pageHeader -replace '<\?php echo \(\$active_nav == ''banks''\) \? ''active'' : ''''; \?>', $navBanks
+    $pageHeader = $pageHeader -replace '<\?php echo \(\$active_nav == ''taxi''\) \? ''active'' : ''''; \?>', $navTaxi
+    $pageHeader = $pageHeader -replace '<\?php echo \(\$active_nav == ''operators''\) \? ''active'' : ''''; \?>', $navOperators
+    $pageHeader = $pageHeader -replace '<\?php echo \(\$active_nav == ''contact''\) \? ''active'' : ''''; \?>', $navContact
+
+    # Clean up any remaining PHP code in page header (like config, isset logic at top)
+    $pageHeader = $pageHeader -replace "(?s)<\?php.*?\?>\s*", ""
+
     # 5. Build full HTML
     $fullHtml = @"
 $pageHeader
