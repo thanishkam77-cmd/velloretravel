@@ -1,0 +1,17 @@
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="keywords" content="Jalagamparai Water Falls, Falls with Park, vellore sanctuary, Vellore info, Tourist places near to vellore, important places n vellore, Vellore River, Attaru River, Vellore Fort, Golden Temple, Government Museum, Kavalur Observatory, Yelagiri, Amrithi Forest, hotels in vellore, vellore hotel, atm in vellore, vellore atm centre, banks in vellore, vellore banks, colleges, college in vellore" />
+<meta name="Description" content="Vellore info, Tourist places near to vellore, important places n vellore" />
+<meta name="Publisher" content="J B Soft System(www.jbsoftsystem.com)">
+<meta name="revisit-after" content="7 days">
+<meta name="googlebot" content="ALL">
+<meta name = "Author" content = "J.Sampath">
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-52845168-29"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-52845168-29');
+</script>
