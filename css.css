@@ -1,0 +1,105 @@
+/* CSS Document */
+
+body{margin:0 auto; padding:0px; background:url(../images/bg.jpg); }
+
+p,h1,h2,h3,strong,table,tr,td,ul,li,a,div{padding:0px; margin:0px;}
+
+.ml10{margin-left:10px;}
+.mr10{margin-right:10px;}
+.ac{text-align:center;}
+.al{text-align:left;}
+.ar{text-align:right;}
+.fl{float:left;}
+.fr{float:right;}
+.space{height:10px; width:100%;}
+.ver-space{float:left; width:10px; height:auto;}
+.clr{clear:both;}
+
+.site-color1{color:#920061;}
+.site-color2{color:#646464;}
+.site-color3{color:#010182;}
+
+.wrap{width:990px; height:auto; margin:0 auto; background:#fff; padding:0px;}
+.grid1{ width:970px; height:100px; margin:0 auto; background:#FDF2F8;} /* Header */
+.grid2{width:970px; margin:0 auto; height:40px; background:url(../images/menu-bg.jpg) repeat-x;}
+.grid3{ width:970px; height:290px; margin:0 auto;}/* Banner */
+.grid4{ width:970px; height:auto; margin:0 auto;} /*Main Div */
+.grid5{width:190px; min-height:530px; height:auto; float:left;  margin-right:5px; border:0px solid #000; background:#F0E8ED; } /*Left Div */
+.grid5-right{width:190px; min-height:530px; height:auto; float:left; margin-left:5px; background:#F0E8ED;}
+.grid6{width:578px; min-height:520px; height:auto;  float:left; padding:10px 0px; background:url(../images/mid-bg.jp) repeat-y; border-left:1px solid #C4C4C4; border-right:1px solid #C4C4C4; } /*Mid Div */
+.grid7{width:970px; height:30px; background:#7C0153; margin:0 auto;  border-top:1px solid #737374}
+
+
+.header-left{width:370px; height:auto; float:left;}
+.header-left em#rot img{ position:relative; top:15px; left:10px;-moz-transition: all 0.8s ease-in-out;
+-webkit-transition: all 0.8s ease-in-out; -o-transition: all 0.8s ease-in-out; -ms-transition: all 0.8s ease-in-out; transition: all 0.8s ease-in-out; float:left; padding:0px; margin:0px;}
+.header-left em#rot img:hover{-moz-transform: rotate(-90deg); -webkit-transform: rotate(-90deg); -o-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg); transform: rotate(-90deg);}
+
+.header-left h1{font:bold 38px Arial, Helvetica, sans-serif; color:#990066; float:right; padding:23px 10px 0px 0px;}
+.header-left h1 a{text-decoration:none; color:#990066;}
+
+.header-right{width:600px; height:auto; float:left;}
+.header-right img{position:relative; top:20px; left:370px;}
+
+
+.grid5 h2{width:188px; height:30px; background:#fff url(../images/left-h2-bg.jpg) repeat-x 1px 1px; border:1px solid #cfcfcf; padding:1px; text-transform:capitalize; color:#fff; font: bold 14px Arial, Helvetica, sans-serif; }
+.grid5 h2 a{text-decoration:none; color:#fff;}
+.grid5 h2 em{font: bold  14px Calibri; color:#fff; padding:0px 0px 0px 32px; background:url(../images/left-a-bg.jpg) no-repeat 10px 0px; text-decoration:none; line-height:30px;}
+
+.grid5-right h2 {width:188px; height:30px; background:#fff url(../images/left-h2-bg.jpg) repeat-x 1px 1px; border:1px solid #cfcfcf; padding:1px; text-transform:capitalize; color:#fff; font: bold 14px Arial, Helvetica, sans-serif;  }
+.grid5-right h2 em{font: bold  14px Calibri; color:#fff; padding:0px 0px 0px 32px; background:url(../images/left-a-bg.jpg) no-repeat 10px 0px; text-decoration:none; line-height:30px;}
+
+.grid7 ul{margin:1px 0px; padding:1px; text-align:center;}
+.grid7 ul li{list-style:none; display:inline; color:#fff;  line-height:30px; padding:2px 3px;}
+.grid7 ul li a{font:normal 12px Arial, Helvetica, sans-serif; color:#fff; text-decoration:none;}
+.grid7 ul li a:hover{text-decoration:underline; color:#ffff00;}
+
+.products{ width:180px; height:auto; background:#F0E8ED; padding-left:10px;}
+.products li{list-style:none; display:block; background:url(../images/left-li-bg.jpg) repeat-x 10px 34px; line-height:30px;}
+.products li a{text-decoration:none; background:url(../images/left-li-abg.jpg) no-repeat 0px 15px;  color:#2F3236; font:normal 14px Arial, Helvetica, sans-serif; padding:10px 0px 0px 13px; line-height:35px; } 
+.products li a:hover{text-decoration:underline; color:#004A91;}
+
+.contents{width:558px; height:auto; margin:0 auto;}
+.contents h1{ font: bold 20px Arial, Helvetica, sans-serif; color:#73004D; border-bottom:1px solid #ccc;}
+.contents h1 a{ font: bold 20px Arial, Helvetica, sans-serif; color:#73004D; text-decoration:none;}
+.contents h1 span{ color:#040470;}
+.contents p{font:normal 13px Arial, Helvetica, sans-serif; padding:5px 0px 10px 0px; color:#131313; text-align:justify;}
+.contents h2{font: bold 13px Arial, Helvetica, sans-serif; color:#920061;}
+.contents strong a{text-decoration:underline; color:#040470; text-align:center;}
+.contents strong a:hover{text-decoration:none; color:#920061;}
+
+/*.more{width:300px; height:auto;}*/
+.more a{font:bold 13px Arial, Helvetica, sans-serif; color:#920061; float:right; text-decoration:none;}
+.more a:hover{text-decoration:underline; color:#040470;}
+
+
+/************************* Tourist *********************************************/
+.tourist{width:220px; height:290px; border:1px solid #E2D8D8; box-shadow: 2px 2px 10px #D2C5CD; -moz-box-shadow: 3px 3px 10px #D2C5CD; -webkit-box-shadow: 3px 3px 10x #D2C5CD;}
+.tourist img{width:210px; height:150px; position:relative; top:5px; left:5px;}
+.tourist h2{font: bold 13px Arial, Helvetica, sans-serif; color:#920061; padding:10px 0px 0px 7px;}
+.tourist ul{padding:10px 0px;}
+.tourist ul li{margin-left:23px;list-style:none; font:normal 12px Arial, Helvetica, sans-serif; color:#131313; list-style:url(../images/tourist-places/tourist-li.png); line-height:20px;}
+a.info{float:right; padding:0px; width:60px; height:20px;background:#7C0153; color:#ffff00; text-decoration:none; border-radius:3px; -moz-border-radius:3px; -webkit-border-radius:3px; margin-right:5px; font:normal 11px Arial, Helvetica, sans-serif; line-height:20px; text-align:center;}
+a.info:hover{background:#000163; color:#fff; text-decoration:none; }
+
+.sub-tab{min-width:400px; height:auto; background:#fff; margin:0 auto}
+.sub-tab tr.head{background:#8A015C; text-align:center; height:30px; color:#fff; font:bold 13px Arial, Helvetica, sans-serif}
+.sub-tab tr.light{background:#F8EAF3;}
+.sub-tab tr.light td{padding:5px 10px; font:normal 12px Arial, Helvetica, sans-serif; color:#131313;}
+
+/****************************** Contact us paget *********************************/
+.contact-us{ width:550px;margin:0px auto;}
+.mandatory{ text-align:right;color:#cc0000;}
+.contact-us td { font:12px Arial, Helvetica, sans-serif; color:#333333}
+.contact-us-address{ width:600px;margin:0px auto; border:1px solid #eae9e9; text-align:left; padding-left:10px;}
+.red{color:#cc0000;}
+/****************************** Site Map *********************************/
+.sitemap{margin-left:25px; padding:0px;}
+.sitemap li{list-style:none;  list-style:url(../images/site-map.png);}
+.sitemap li a{font:normal 13px Arial, Helvetica, sans-serif; text-decoration:none; color:#313131; font-weight:bold;}
+.sitemap li a:hover{text-decoration:underline; color:#CC0000;}
+.sitemap li ul{margin-left:35px; padding:0px;}
+.sitemap li ul li{list-style:circle;}
+.sitemap li ul li a{font:normal 13px Arial, Helvetica, sans-serif; text-decoration:none; color:#1D3070; list-style:url(../images/li-abg.jpg);}
+.sitemap li ul li a:hover{text-decoration:underline; color:#CC0000;}
