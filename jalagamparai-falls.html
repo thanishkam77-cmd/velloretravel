@@ -1,0 +1,223 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Vellore City Travel Information, tourist places, hotels, taxi and bank details.">
+  <meta name="keywords" content="Vellore Travels, Vellore Fort, Golden Temple, Yelagiri, Kavalur Observatory, Amirthi Forest, Jalagamparai Falls, hotels in vellore, vellore taxi">
+  <title></title>
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Custom Responsive Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+  
+  <!-- FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body id="">
+
+  <!-- Wrapper Grid Container -->
+  <div class="site-container">
+    
+
+
+    <!-- Header Section -->
+    <header class="main-header">
+      <div class="header-inner">
+        <a href="index.html" class="logo-area">
+
+          <div class="logo-text">
+            <h1>Vellore <span>Travels</span></h1>
+            <p>Your Fort City Companion</p>
+          </div>
+        </a>
+        
+        <!-- Hamburger Menu Button -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Toggle Navigation Menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Navigation Bar -->
+    <nav class="main-navigation" id="mainNavigation">
+      <ul class="nav-menu">
+        <li><a href="index.html" class="">Home</a></li>
+        <li class="has-dropdown">
+          <a href="tourist-places.html" class="">Tourist Places <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="vellore-fort.html">Vellore Fort</a></li>
+            <li><a href="golden-temple.html">Golden Temple</a></li>
+            <li><a href="govt-museum.html">Government Museum</a></li>
+            <li><a href="observatory.html">Kavalur Observatory</a></li>
+            <li><a href="yelagiri.html">Yelagiri</a></li>
+            <li><a href="amrithi-forest.html">Amirthi Forest</a></li>
+            <li><a href="jalagamparai-falls.html">Jalagamparai Falls</a></li>
+          </ul>
+        </li>
+        <li><a href="vellore-hotels.html" class="">Hotels to Stay</a></li>
+        <li><a href="vellore-food.html" class="">Famous Food</a></li>
+        <li><a href="vellore-atm.html" class="">ATM</a></li>
+        <li><a href="vellore-banks.html" class="">Banks</a></li>
+        <li><a href="vellore-taxiservice.html" class="">Taxi</a></li>
+        <li><a href="tour-operator.html" class="">Tour Operators</a></li>
+        <li><a href="contactus.html" class="">Contact Us</a></li>
+      </ul>
+    </nav>
+
+
+<!-- Hero Slideshow Banner -->
+    <section class="hero-slideshow">
+      <div class="slides-container">
+        <div class="my-slide fade">
+          <img src="slides/p_0001.jpg" alt="Vellore Fort Panorama">
+          <div class="slide-caption">Explore The Rich Dravidian Heritage</div>
+        </div>
+        <div class="my-slide fade">
+          <img src="slides/p_0002.jpg" alt="Golden Temple Sripuram">
+          <div class="slide-caption">Experience Divine Peace at Golden Temple</div>
+        </div>
+      </div>
+      <!-- Slider navigation controls -->
+      <button class="slide-prev" onclick="changeSlide(-1)" aria-label="Previous Slide">&#10094;</button>
+      <button class="slide-next" onclick="changeSlide(1)" aria-label="Next Slide">&#10095;</button>
+    </section>
+
+<div class="main-content-grid">
+<!-- LEFT SIDEBAR -->
+<aside class="sidebar sidebar-left">
+  
+  <!-- Quick Enquiry Form -->
+  <div class="sidebar-widget enquiry-widget">
+    <h2 class="widget-title"><i class="fa-solid fa-paper-plane"></i> Quick Enquiry</h2>
+    <form action="mail-right.php" method="post" class="enquiry-form" id="quickEnquiryForm">
+      <div class="form-group">
+        <label for="enquiryName" class="sr-only">Name</label>
+        <input type="text" id="enquiryName" name="Name" placeholder="Your Name" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="enquiryMobile" class="sr-only">Mobile No.</label>
+        <input type="tel" id="enquiryMobile" name="Mobile_No" placeholder="Mobile Number" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="enquiryEmail" class="sr-only">Email Id.</label>
+        <input type="email" id="enquiryEmail" name="EMail" placeholder="Email Address" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="enquiryMessage" class="sr-only">Message</label>
+        <textarea id="enquiryMessage" name="Message" rows="4" placeholder="Your Message" required></textarea>
+      </div>
+      
+      <button type="submit" class="btn btn-primary btn-block">Send Enquiry <i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </div>
+
+  <!-- Testimonial Rotator Widget -->
+  <div class="sidebar-widget testimonial-widget">
+    <h2 class="widget-title"><i class="fa-solid fa-quote-left"></i> Testimonial</h2>
+    <div class="testimonial-slider-container">
+      <div class="testimonial-slide active">
+        <div class="testimonial-content">
+          <p>"The marketing consultants of flats and plots dealing with the real estate."</p>
+          <h3>Shrine Properties</h3>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-content">
+          <p>"Excellent cabs and tour service in Vellore. Prompt and very professional drivers."</p>
+          <h3>Ramesh Kumar</h3>
+        </div>
+      </div>
+      <div class="testimonial-slide">
+        <div class="testimonial-content">
+          <p>"Vellore Travels made our visit to Sripuram Golden Temple and Yelagiri extremely comfortable."</p>
+          <h3>Anita Sharma</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</aside>
+
+
+  <main class="page-content">
+
+
+        <div class="content-card">
+          <h1><a href="tourist-places.html">Tourst Places</a> &raquo; <span>Jalagamparai Water Falls </span></h1>
+<p>Jalagamparai water falls is located in the Yelagiri hills of the Vellore <img src="images/tourist-places/jalgamparai-falls.png" alt="Amirthi Forest" style="float:right; margin:5px 0px 5px 10px;" />district of Tamil Nadu. Flowing down from a breathtaking height of 15 meters, the place is popular among lovebirds. Created by the Attaru river, which flows through the Yelagiri hills.</p>
+<p> Jalagamparai waterfalls is a beautiful spot for picnic. The falls can be reached after a 1 hour trek of 6 km from Nilavoor. Best time to visit the falls is after the monsoon rains. </p>
+<p>This could either be reached from Tiruppathur 15 kms away or it is an hour’s trek from the hills. Adjacent to the Jalagambari falls, there is a Murugan temple, located within a building constructed in the shape of the lingam. </p>
+        </div>
+      
+  
+  </main>
+
+<!-- RIGHT SIDEBAR -->
+<aside class="sidebar sidebar-right">
+  <div class="sidebar-widget">
+    <h2 class="widget-title"><i class="fa-solid fa-map-location-dot"></i> Tourist Places</h2>
+    <ul class="widget-links">
+      <li><a href="vellore-fort.html"><i class="fa-solid fa-angle-right"></i> Vellore Fort</a></li>
+      <li><a href="govt-museum.html"><i class="fa-solid fa-angle-right"></i> Government Museum</a></li>
+      <li><a href="observatory.html"><i class="fa-solid fa-angle-right"></i> Kavalur Observatory</a></li>
+      <li><a href="yelagiri.html"><i class="fa-solid fa-angle-right"></i> Yelagiri Hills</a></li>
+      <li><a href="amrithi-forest.html"><i class="fa-solid fa-angle-right"></i> Amirthi Forest</a></li>
+      <li><a href="jalagamparai-falls.html"><i class="fa-solid fa-angle-right"></i> Jalagamparai Falls</a></li>
+    </ul>
+  </div>
+  
+  <div class="sidebar-widget golden-temple-widget">
+    <h2 class="widget-title"><i class="fa-solid fa-gopuram"></i> Golden Temple</h2>
+    <div class="widget-body">
+      <a href="golden-temple.html" class="widget-img-link">
+        <img src="images/golden-temple.gif" alt="Golden Temple Sripuram" class="responsive-img">
+        <span class="overlay-text">Visit Sripuram</span>
+      </a>
+    </div>
+  </div>
+</aside>
+
+</div> <!-- End main-content-grid -->
+
+<!-- Site Footer -->
+<footer class="main-footer">
+  <div class="footer-links">
+    <a href="index.html">Home</a>
+    <span class="divider">|</span>
+    <a href="tourist-places.html">Tourist Places</a>
+    <span class="divider">|</span>
+    <a href="vellore-hotels.html">Hotels to Stay</a>
+    <span class="divider">|</span>
+    <a href="vellore-atm.html">ATM</a>
+    <span class="divider">|</span>
+    <a href="vellore-banks.html">Banks</a>
+    <span class="divider">|</span>
+    <a href="vellore-taxiservice.html">Taxi</a>
+    <span class="divider">|</span>
+    <a href="tour-operator.html">Tour Operators</a>
+    <span class="divider">|</span>
+    <a href="contactus.html">Contact Us</a>
+    <span class="divider">|</span>
+    <a href="sitemap.html">Sitemap</a>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 Vellore Travels. All Rights Reserved. Designed with Responsive Layout.</p>
+  </div>
+</footer>
+
+</div> <!-- End site-container -->
+
+<!-- Javascript for Interactions -->
+<script src="js/main.js"></script>
+</body>
+</html>
+
